@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    display: flex;
+}
+
+.card-image {
+    width: 300px;
+    height: 450px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px 0px 0 10px;
+}
+
+.card-content {
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 0px 10px 10px 0px;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+}
+
+h1 {
+    font-size: 34px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    line-height: 1;
+    color: hsl(212, 21%, 14%);
+}
+
+p {
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 34px;
+}
+
+.pricing-safe {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.card-btn {
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    gap: 15px;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.m-image {
+    display: none;
+}
+
+@media (max-width: 50em) {
+    .card {
+        flex-direction: column;
+    }
+    .d-image {
+        display: none;
+    }
+    .m-image {
+        display: block;
+    }
+
+    .card-image {
+        height: auto;
+    }
+
+    img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-content {
+        padding: 15px;
+        height: 300px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .pricing {
+        font-size: 28px;
+    }
+}
